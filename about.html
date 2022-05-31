@@ -1,19 +1,22 @@
 ---
 layout: default
-banner_image: /images/plant.jpg 
-team: 
- - name: mati
-   bio: web developer
-   description: Lorem ipsum amet coli persti itiolis retiop rutibus merbi.
-   profile_image: /images/profile-1.jpg
- - name: lio
-   bio: assistant
-   description: Lorem ipsum amet coli persti itiolis retiop rutibus merbi.
-   profile_image: /images/profile-2.jpg
- - name: demet
-   bio: live chat
-   description: Lorem ipsum amet coli persti itiolis retiop rutibus merbi.
-   profile_image: /images/profile-3.jpg
+banner_image: /images/plant.jpg
+team:
+   -
+      name: lio
+      bio: assistant
+      description: Lorem ipsum amet coli persti itiolis retiop rutibus merbi.
+      profile_image: /images/profile-2.jpg
+   -
+      name: mati
+      bio: web developer
+      description: Lorem ipsum amet coli persti itiolis retiop rutibus merbi.
+      profile_image: /images/profile-1.jpg
+   -
+      name: demet
+      bio: live chat
+      description: Lorem ipsum amet coli persti itiolis retiop rutibus merbi.
+      profile_image: /images/profile-3.jpg
 about-video-id: HRaj0lPr7yw
 ---
 
@@ -37,7 +40,7 @@ about-video-id: HRaj0lPr7yw
 
        <div class="grid flex-flip-alternate"> 
          <div class="col-5 padded-2"> 
-            <img src="{{ person.profile_image }}" class="profile-image">
+            <img src="{{ person.profile_image }}" class="profile-image" />
          </div>
 
          <div class="col-7-middle padded-1"> 
@@ -61,11 +64,7 @@ about-video-id: HRaj0lPr7yw
    <p class="emphasis editable"> Bali </p>
 
   <div class="padded-1"> 
-   <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{page.about-video-id }}' 
-      frameborder='0' allowfullscreen></iframe> </div>
+   <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{page.about-video-id }}' frameborder='0' allowfullscreen></iframe> </div>
    </div>
 
 </section>
-
-
-
