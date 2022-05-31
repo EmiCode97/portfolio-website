@@ -1,5 +1,6 @@
 ---
 layout: default
+banner_image: /images/plant.jpg 
 team: 
  - name: mati
    bio: web developer
@@ -13,6 +14,7 @@ team:
    bio: live chat
    description: Lorem ipsum amet coli persti itiolis retiop rutibus merbi.
    profile_image: /images/profile-3.jpg
+about-video-id: HRaj0lPr7yw
 ---
 
 <section class="tall-70 grid bg-green">
@@ -22,23 +24,25 @@ team:
     </div>
 
 
-    <div class="col-7 bg-image bg-plant"> </div>
+    <div class="col-7 bg-image bg-plant" style="  background-image: url('{{page.banner_image}}');"> </div>
 </section> 
 
 
-
+<!-- loop -->
 <section class="padded"> 
+   <!-- I put the class inside a div in case I want to add a background-image (to prevent it to be affected by the class too) -->
+   <div class="capped-width"> 
 
    {% for person in page.team %}
 
-       <div class="grid"> 
-         <div class="col-5 padded-1"> 
-            <img src="{{ person.profile_image }}">
+       <div class="grid flex-flip-alternate"> 
+         <div class="col-5 padded-2"> 
+            <img src="{{ person.profile_image }}" class="profile-image">
          </div>
 
          <div class="col-7-middle padded-1"> 
-            <h3> {{ person.name }} </h3>
-            <p> <strong>  {{ person.bio }}      </strong> </p>
+            <h3> Meet {{ person.name }} </h3>
+            <p> <strong>  {{ person.bio }}  </strong> </p>
             <p> {{ person.description }} </p>
        </div>
 
@@ -46,4 +50,22 @@ team:
 
    {% endfor %}
 
+ </div>
 </section>
+
+
+
+<!-- video of presentation -->
+<section class="padded bg-green center">
+   <h2 class="editable"> Watch our video </h2>
+   <p class="emphasis editable"> Bali </p>
+
+  <div class="padded-1"> 
+   <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{page.about-video-id }}' 
+      frameborder='0' allowfullscreen></iframe> </div>
+   </div>
+
+</section>
+
+
+
