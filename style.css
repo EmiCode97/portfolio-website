@@ -31,6 +31,10 @@ html {
 
 /* End temporary styles */
 
+.tall-40 {
+    min-height: 40vh;
+}
+
 .tall-50 {
     min-height: 50vh;
 }
@@ -271,6 +275,12 @@ a { text-decoration: none;}
 
 .bg-plant-2 {
     background-image: url('/images/plant-2.jpg');
+    background-position: 75% 50%;
+}
+
+
+.bg-leaves {  
+    background-image: url('/images/leaves.png');
     background-position: 75% 50%;
 }
 
