@@ -37,15 +37,42 @@ layout: default
 
 
 
-<section class="padded grid"> 
+<section class="padded">
+
+  <div class="capped-width grid-center">
+
+  <div class="col-9_xs-12 padded-05 center margin-b-1">
+      <h2> Latest Projects. </h2>
+      <hr> 
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+  </div>
+
+      {% for project in site.projects limit: 3 %}
+
+          {% include project-loop-item-square.html %}
+         
+      {% endfor %}
+
+  </div>
+
+</section>
 
 
-    <h2 class="center"> Related projects. </h2>
 
-    <div class="capped-width"> 
+<!-- one recent project 
+
+  <section class="padded"> 
+
+
+    <div class="capped-width grid-center"> 
+
+      <div class="col-9 padded-05 center margin-b-1">
+        <h2 class="center"> Related projects. </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p>
+      </div>
 
       {% for project in site.projects limit: 4 %}
-         <div class=" bg-image square padded-1"
+         <div class="bg-image landscape-2"
          style="background-image: url('{{ project.featured_image }}');"> </div>
 
         <div class="grid-spaceBetween"> 
@@ -54,7 +81,7 @@ layout: default
             <p class="emphasis"> {{ project.description }} </p>
           </div>
 
-        <div class="col-4 padded-1"> 
+        <div class="col-4 padded-1 right"> 
             <p class="emphasis"> Design by: {{ project.design-by }} </p>
             <p class="emphasis"> Build by: {{ project.build-by }} </p>
             <a href="{{ project.live_url }}" class="button" target="_blank"> View Live Site </a>
@@ -62,10 +89,17 @@ layout: default
 
     </div>
 
-
-
       {% endfor %}
 
     </div>
 
 </section>
+-->
+
+
+
+
+
+
+
+

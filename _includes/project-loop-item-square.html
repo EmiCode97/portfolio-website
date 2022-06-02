@@ -1,0 +1,26 @@
+<!-- Since the post loop item uses a column class, make sure the parent container has a grid -->
+
+<div class="col-4_xs-12 project-item padded-1">
+    <a href="{{ project.live_url }}" class="bg-image square" style="background-image:url('{{ project.featured_image }}');"></a>
+    <div class="padded-t-1 padded-b-1">
+        
+        {% for item in project.categories %}
+            <span class="tag"> {{item}} </span>
+        {% endfor %}
+
+        <h2 class="margin-t-1"> {{ project.title }} </h2>
+        <p> {{ project.description }} </p>
+        <a href="{{ project.live_url }}" class="subtle-button"> live site </a>
+
+    </div>
+</div>
+
+
+<!-- Want the categories to link to their archive page? Replace the span with a link like this. 
+
+{% for item in post.categories %}
+    <span class="tag"> {{item}} </span>
+{% endfor %}
+
+
+-->

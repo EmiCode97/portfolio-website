@@ -326,6 +326,50 @@ a { text-decoration: none;}
 
 
 
+
+
+
+/* Individual Elements */
+
+.tag {
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
+  }
+
+
+
+/* blockquotes  */
+
+blockquote {
+    line-height: 1.4;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: rgb(150,150,150);
+    padding-left: 1.5rem;
+    margin-left: 1.5rem;
+    border-left: 2px solid;
+  }
+  
+  blockquote p {
+    font-size: 1.8rem;
+  }
+
+
+  
+/* HR Line Elements  */
+
+hr {
+    border: none;
+    border-bottom: 1px solid rgb(200,200,200); 
+    margin: 2.5rem 0;
+  }
+
+
 /* Responsive Video    (shift, option, f > beautify selection) */ 
 .embed-container {
     position: relative;
