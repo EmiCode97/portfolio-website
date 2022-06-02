@@ -37,15 +37,15 @@ layout: default
 
 
 
-<section class="padded"> 
+<section class="padded grid"> 
 
 
-    <h2 class="center"> Featured projects </h2>
+    <h2 class="center"> Related projects. </h2>
 
     <div class="capped-width"> 
 
-      {% for project in site.projects limit: 1 %}
-         <div class="bg-image landscape"
+      {% for project in site.projects limit: 4 %}
+         <div class=" bg-image square padded-1"
          style="background-image: url('{{ project.featured_image }}');"> </div>
 
         <div class="grid-spaceBetween"> 
@@ -54,7 +54,7 @@ layout: default
             <p class="emphasis"> {{ project.description }} </p>
           </div>
 
-        <div class="col-4 padded-1 right"> 
+        <div class="col-4 padded-1"> 
             <p class="emphasis"> Design by: {{ project.design-by }} </p>
             <p class="emphasis"> Build by: {{ project.build-by }} </p>
             <a href="{{ project.live_url }}" class="button" target="_blank"> View Live Site </a>

@@ -258,6 +258,7 @@ a { text-decoration: none;}
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/images/plant.jpg');
+    
 }
 
 .profile-image {
@@ -267,6 +268,11 @@ a { text-decoration: none;}
 .landscape {
   padding-bottom: 60%;
 }
+
+.landscape-2 {
+    padding-bottom: 50%;
+  }
+
 
 .bg-plant {
     background-image: url('/images/plant.jpg');
@@ -297,6 +303,27 @@ a { text-decoration: none;}
     margin-left: 1rem;
     margin-top: 0.2rem;
 }
+
+
+
+
+
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
+
+
 
 
 /* Responsive Video    (shift, option, f > beautify selection) */ 
