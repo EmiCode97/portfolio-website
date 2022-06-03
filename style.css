@@ -30,6 +30,9 @@ html {
 
 
 /* End temporary styles */
+.tall-20 {
+    min-height: 20vh;
+}
 
 .tall-40 {
     min-height: 40vh;
@@ -104,6 +107,22 @@ html {
 .margin-b-2 {
     margin-bottom: 2rem;
 }
+
+
+.margin-b-4 {
+    margin-bottom: 4rem;
+}
+
+.margin-t-2 {
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
 
 .bg-rust {
     background-color: #d3b4a2;
@@ -258,8 +277,8 @@ a { text-decoration: none;}
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/images/plant.jpg');
-    
 }
+
 
 .profile-image {
     border-radius: 100%;
@@ -360,7 +379,7 @@ blockquote {
   }
 
 
-  
+
 /* HR Line Elements  */
 
 hr {
@@ -485,7 +504,7 @@ hr {
   .sm-margin-r-0 { margin-right: 0; }
 
 
-
+ 
 
 
 
@@ -498,16 +517,15 @@ form textarea {
  	width: 100%;
  	margin: 0.5rem 0;
 	padding: 0.5rem;
- 	border: 2px solid #a2745c;
+ 
  	outline: none;
  	font-family: inherit;
  	font-size: 0.9rem;
+     
 }
 
-form input:focus,
-form textarea:focus {
- 	border-color: #9b9b81;
-}
+
+
 
 textarea {
  	min-height: 4rem;
@@ -517,14 +535,32 @@ form label {
 	margin-top: 1rem;
  	display: block;
  	color: #a2745c;
- 	font-weight: bold;
+ 	font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
-form .button {
-   	border: 2px solid #a2745c;
-   	background: none;
-   	color: #a2745c;
-   	font-weight: bold;
-   	padding: 0.5rem 2rem;
-   	margin-top: 1rem;
+
+.form-style-two input,
+.form-style-two textarea {
+  background-color: #ffffff;
+  text-align: center;
 }
+
+.form-style-two label {
+    text-align: center;
+}
+
+
+.form-style-two button {
+    
+    background: none;
+    color: #a2745c;
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+    font-weight: light;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+  }
+
+.button:hover { background-color: #d3b4a9;}
