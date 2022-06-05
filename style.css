@@ -517,14 +517,11 @@ form textarea {
  	width: 100%;
  	margin: 0.5rem 0;
 	padding: 0.5rem;
- 
  	outline: none;
  	font-family: inherit;
  	font-size: 0.9rem;
-     
+    
 }
-
-
 
 
 textarea {
@@ -538,6 +535,7 @@ form label {
  	font-weight: normal;
     text-transform: uppercase;
     font-size: 0.8rem;
+ 
 }
 
 
