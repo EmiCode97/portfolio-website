@@ -477,9 +477,10 @@ hr {
 @media (max-width: 64em) {
   .show-md { display: block; }
   .hide-md { display: none;  }
+  .mobile-flip { flex-direction: column-reverse;}
 }
 
-
+.mobile-flip { flex-direction: row-reverse;}
 
 /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
 
