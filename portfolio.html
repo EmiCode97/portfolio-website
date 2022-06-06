@@ -47,14 +47,16 @@ layout: default
       
   </div>
 
+  <div class="col-12 grid-center"> 
       {% for project in site.projects limit: 3 %}
-
+  <div class="col-4"> 
          {% include project-loop-item-square.html %}
 
-        
+   </div>
 
       {% endfor %}
 
+    </div>
   </div>
 
 </section>
