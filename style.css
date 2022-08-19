@@ -30,6 +30,10 @@ html {
 
 
 /* End temporary styles */
+.tall-10 {
+    min-height: 10vh;
+}
+
 .tall-20 {
     min-height: 20vh;
 }
@@ -518,11 +522,19 @@ form textarea {
  	width: 100%;
  	margin: 0.5rem 0;
 	padding: 0.5rem;
+    border: 2px solid #a2745c;
  	outline: none;
  	font-family: inherit;
  	font-size: 0.9rem;
+    text-align: center;
     
 }
+
+form input:focus,
+form textarea:focus {
+    border-color:#a2745c;
+}
+
 
 
 textarea {
@@ -536,10 +548,17 @@ form label {
  	font-weight: normal;
     text-transform: uppercase;
     font-size: 0.8rem;
- 
+
 }
 
+.button:hover { background-color: #d3b4a9;}
 
+form .button {
+    color: #a2745c;
+    background-color: white;
+}
+
+/*
 .form-style-two input,
 .form-style-two textarea {
   background-color: #ffffff;
@@ -548,6 +567,7 @@ form label {
 
 .form-style-two label {
     text-align: center;
+    
 }
 
 
@@ -560,15 +580,73 @@ form label {
     font-weight: light;
     padding: 0.5rem 2rem;
     margin-top: 1rem;
+    
   }
 
 .button:hover { background-color: #d3b4a9;}
 
+*/
+
+
+
+/* hamburger menu */
+
+.hamburger-button::after {
+   content: "☰";
+   cursor: pointer;
+   padding: 0 0.5rem;
+   display: inline-block;
+   font-weight: 200;
+   font-size: 2.5rem;
+   line-height: 0.8;
+   margin-top: 0.9rem;
+   position: absolute;
+   right: 1rem;
+   top: 2.1rem;
+   z-index: 6;
+ }
+ 
+ .hamburger-button.active::after {
+   content: "x";
+   color: black;
+ }
+ 
+ .mobile-menu {
+   display: none;
+   background-color: #e0fbfc;
+   padding: 5%;
+   position: fixed;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   text-align: center;
+   z-index: 5;
+ }
+ 
+ .mobile-menu a {
+   text-decoration: none;
+   color: inherit;
+   padding: 5vh 5%;
+   display: block;
+   font-weight: normal;
+   font-size: 0.8rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ 
+ .inline, .mobile-menu .inline {
+   display: inline;
+   margin-top: 3%;
+   
+ }
+ 
+ .social-links a { display: inline;}
 
 
 
 
-
+/* cookie banner*/
 
 #cookie-notice {
     padding: 0.5rem 1rem;
