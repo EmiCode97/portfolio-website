@@ -486,9 +486,10 @@ hr {
 
 .mobile-flip { flex-direction: row-reverse;}
 
+
+
 /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
 
-	 
   .sm-text-center { text-align: center; }
   .sm-text-left { text-align: left; }
   .sm-text-right { text-align: right; }
@@ -509,7 +510,7 @@ hr {
   .sm-margin-r-0 { margin-right: 0; }
 
 
- 
+ .xs-text-center {text-align: center;}
 
 
 

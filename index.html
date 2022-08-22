@@ -6,7 +6,7 @@ layout: default
     {% include header-nav.html %}
     <div class="col-6_sm-12-middle padded-0 center-sm editable">
             <h1 class="font-weight-extra-bold featured-text editable" data-aos="fade-down"  data-aos-duration="1000">
-                Portfolio Site</h1> 
+                Portfolio Website /h1> 
         
     </div>  
    
@@ -18,7 +18,7 @@ layout: default
 <section class="bg-image bg-plant padded tall-70 grid-middle">
     <div class="col-8_sm-10">
         <h2> Website design & development that grows with your business </h2>   
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum. Cupiditate ipsam voluptatem quia. </p>
     </div>
 </section> 
 
@@ -87,7 +87,7 @@ layout: default
 
 
 <!------------- Grid of services  -------------->
-<section class="padded grid">
+<section class="padded grid sm-text-center">
     <div class="col-4_xs-12 padded">
         <h3> Design. </h3>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero dolor similique quod voluptatibus vel eos expedita, veniam obcaecati porro earum iusto, officia fuga quae possimus, fugiat illum reprehenderit deserunt.</p>
@@ -107,11 +107,11 @@ layout: default
 <!------------------------ Features / about blocks -------------------->
 
 <section class="bg-rust padded projects" id="projects">
-    <h2 class="center"> Recent Projects </h2>
+    <h2 class="center"> Recent Projects. </h2>
 
     {% for project in site.projects limit: 2 %}
 
-    <div class="grid flex-flip-alternate">
+    <div class="grid flex-flip-alternate sm-text-center">
         
         <div class="col-5_sm-12-middle padded">
             
@@ -119,7 +119,7 @@ layout: default
             <p> {{ project.description }} </p>
             <a href="{{ project.live_url }}" class="button" target="_blank"> Go to site </a>
         </div>
-        <div class="col-7_sm-12-middle padded">
+        <div class="col-7_sm-12-middle padded margin-b-2">
             <img src="{{ project.featured_image }}" alt="{{ project.title }}">    
         </div>
 
